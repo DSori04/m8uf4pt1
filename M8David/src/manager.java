@@ -1,43 +1,80 @@
 import java.time.LocalDate;
 
-public class manager extends person {
-    // Variables to store manager information
-    LocalDate startDate; // Start date of the manager's tenure
-    int experience; // Years of experience of the manager
+/**
+ * The Manager class represents a manager, extending the Person class.
+ */
+public class Manager extends Person {
 
-    // Getter method for retrieving the start date of the manager
-    public LocalDate getStartDate() {
-        return startDate;
-    }
+    /** Start date of the manager's tenure. */
+    private LocalDate startDate;
 
-    // Setter method for updating the start date of the manager
-    public void setStartDate(LocalDate startDate) {
-        this.startDate = startDate;
-    }
+    /** Years of experience of the manager. */
+    private int experience;
 
-    // Getter method for retrieving the experience of the manager
-    public int getExperience() {
-        return experience;
-    }
-
-    // Setter method for updating the experience of the manager
-    public void setExperience(int experience) {
-        this.experience = experience;
-    }
-
-    public manager(String name, String identifier, LocalDate startDate, int experience) {
+    /**
+     * Constructs a manager with specified attributes.
+     *
+     * @param name       The name of the manager.
+     * @param identifier The identifier of the manager.
+     * @param startDate  The start date of the manager's tenure.
+     * @param experience The years of experience of the manager.
+     */
+    public Manager(String name, String identifier, LocalDate startDate, int experience) {
         super(name, identifier);
         this.startDate = startDate;
         this.experience = experience;
     }
 
-    // Constructor with parameters to initialize manager attributes
-    public manager(LocalDate startDate, int experience) {
+    /**
+     * Constructs a manager with specified attributes.
+     *
+     * @param startDate  The start date of the manager's tenure.
+     * @param experience The years of experience of the manager.
+     */
+    public Manager(LocalDate startDate, int experience) {
         this.startDate = startDate;
         this.experience = experience;
     }
 
-    // Default constructor for the Manager class
-    public manager() {
+    /**
+     * Constructs a manager with default attributes.
+     */
+    public Manager() {
+    }
+
+    /**
+     * Gets the start date of the manager's tenure.
+     *
+     * @return The start date of the manager's tenure.
+     */
+    public LocalDate getStartDate() {
+        return startDate;
+    }
+
+    /**
+     * Sets the start date of the manager's tenure.
+     *
+     * @param startDate The start date to set for the manager's tenure.
+     */
+    public void setStartDate(LocalDate startDate) {
+        this.startDate = startDate;
+    }
+
+    /**
+     * Gets the years of experience of the manager.
+     *
+     * @return The years of experience of the manager.
+     */
+    public int getExperience() {
+        return experience;
+    }
+
+    /**
+     * Sets the years of experience of the manager.
+     *
+     * @param experience The years of experience to set for the manager.
+     */
+    public void setExperience(int experience) {
+        this.experience = experience;
     }
 }
