@@ -1,7 +1,7 @@
 /**
  * The Guest class represents a guest, extending the Person class.
  */
-public class Guest extends Person {
+public class guest extends person {
 
     /** The nationality of the guest. */
     private String nationality;
@@ -11,7 +11,7 @@ public class Guest extends Person {
      *
      * @param nationality The nationality of the guest.
      */
-    public Guest(String nationality) {
+    public guest(String nationality) {
         this.nationality = nationality;
     }
 
@@ -19,7 +19,7 @@ public class Guest extends Person {
      * Constructs a guest with no specified nationality.
      * The nationality should be set using the setter method.
      */
-    public Guest() {
+    public guest() {
     }
 
     /**
