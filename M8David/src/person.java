@@ -1,7 +1,7 @@
 /**
  * The Person class represents a person.
  */
-public class person {
+public class Person {
 
     /** Name of the person. */
     private String name;
@@ -15,7 +15,7 @@ public class person {
      * @param name       The name of the person.
      * @param identifier The identifier of the person.
      */
-    public person(String name, String identifier) {
+    public Person(String name, String identifier) {
         this.name = name;
         this.identifier = identifier;
     }
@@ -23,7 +23,7 @@ public class person {
     /**
      * Constructs a person with default attributes.
      */
-    public person() {
+    public Person() {
     }
 
     /**

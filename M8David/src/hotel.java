@@ -1,7 +1,7 @@
 /**
  * The Hotel class represents a hotel.
  */
-public class hotel {
+public class Hotel {
 
     /** Name of the hotel. */
     private String name;
@@ -18,7 +18,7 @@ public class hotel {
     /**
      * Constructs a hotel with default attributes.
      */
-    public hotel() {
+    public Hotel() {
     }
 
     /**
@@ -29,7 +29,7 @@ public class hotel {
      * @param web     The website of the hotel.
      * @param manager The manager associated with the hotel.
      */
-    public hotel(String name, String address, String web, manager manager) {
+    public Hotel(String name, String address, String web, manager manager) {
         this.name = name;
         this.address = address;
         this.web = web;
