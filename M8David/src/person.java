@@ -21,12 +21,6 @@ public class Person {
     }
 
     /**
-     * Constructs a person with default attributes.
-     */
-    public Person() {
-    }
-
-    /**
      * Gets the name of the person.
      *
      * @return The name of the person.
@@ -60,5 +54,11 @@ public class Person {
      */
     public void setIdentifier(String identifier) {
         this.identifier = identifier;
+    }
+
+    /**
+     * Constructs a person with default attributes.
+     */
+    public Person() {
     }
 }

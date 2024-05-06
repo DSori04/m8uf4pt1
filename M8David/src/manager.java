@@ -3,7 +3,7 @@ import java.time.LocalDate;
 /**
  * The Manager class represents a manager, extending the Person class.
  */
-public class Manager extends person {
+public class Manager extends Person {
 
     /** Start date of the manager's tenure. */
     private LocalDate startDate;
@@ -34,12 +34,6 @@ public class Manager extends person {
     public Manager(LocalDate startDate, int experience) {
         this.startDate = startDate;
         this.experience = experience;
-    }
-
-    /**
-     * Constructs a manager with default attributes.
-     */
-    public Manager() {
     }
 
     /**

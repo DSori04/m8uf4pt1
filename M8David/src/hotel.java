@@ -13,13 +13,7 @@ public class Hotel {
     private String web;
 
     /** Manager object associated with the hotel. */
-    private manager manager;
-
-    /**
-     * Constructs a hotel with default attributes.
-     */
-    public Hotel() {
-    }
+    private Manager manager;
 
     /**
      * Constructs a hotel with specified attributes.
@@ -29,7 +23,7 @@ public class Hotel {
      * @param web     The website of the hotel.
      * @param manager The manager associated with the hotel.
      */
-    public Hotel(String name, String address, String web, manager manager) {
+    public Hotel(String name, String address, String web, Manager manager) {
         this.name = name;
         this.address = address;
         this.web = web;
@@ -95,7 +89,7 @@ public class Hotel {
      *
      * @return The manager associated with the hotel.
      */
-    public manager getManager() {
+    public Manager getManager() {
         return manager;
     }
 
@@ -104,7 +98,13 @@ public class Hotel {
      *
      * @param manager The manager to set for the hotel.
      */
-    public void setManager(manager manager) {
+    public void setManager(Manager manager) {
         this.manager = manager;
+    }
+
+    /**
+     * Constructs a hotel with default attributes.
+     */
+    public Hotel() {
     }
 }
